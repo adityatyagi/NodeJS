@@ -27,3 +27,24 @@ arr.push(function(){
 arr.forEach(function(item){
     item();                 // calling function 
 });
+
+
+// Object.create and Prototypes
+// There are a number of ways to create object, and this is one of them
+
+var person ={
+    firstname: " ",
+    lastname: " ",
+    greet: function(){
+        return this.firstname + " " + this.lastname;
+    }
+}
+
+var john = Object.create(person); // john is an empty object who's prototype object = person object
+
+john.firstname ="John"; // I can overwrite all the values of the prototype variables
+john.lastname ="Doe";
+
+console.log(john.firstname);
+console.log(john.lastname);
+

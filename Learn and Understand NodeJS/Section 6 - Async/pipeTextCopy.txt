@@ -1,0 +1,2 @@
+This is in pipeText.
+to be copied to pipeTextCopy.txt

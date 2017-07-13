@@ -10,7 +10,7 @@ http.createServer(function(req, res) {
 
     if (req.url === '/') {
         fs.createReadStream(__dirname + '/index3.html').pipe(res);
-    } else if (req.url === '/api') {
+    } else if (req.url === '/json') {
         res.writeHead(200, { 'Content-Type': 'application/JSON' });
 
         var obj = {
